@@ -68,6 +68,7 @@ body {
 .link-btn:focus {
   color: #fff;
   background-color: #404bbf;
+  border: 1px solid transparent;
 }
 .list {
   list-style-type: none;
@@ -102,6 +103,15 @@ ul {
   border: 1px solid #000;
 }
 
+.container-header {
+  display: flex;
+  width: 1158px;
+}
+
+.header {
+  border-bottom: 1px solid #e7e9fc;
+}
+
 .header-logo {
   color: #4d5ae5;
   background-color: var(--white, #fff);
@@ -114,18 +124,18 @@ ul {
   text-decoration: none;
   width: 44px;
   padding: 25.5px 0 25.5px 0;
+  margin-right: 76px;
 }
 
 .header-logo-second {
   color: var(--navyblue, #2e2f42);
   width: 71px;
-  padding: 25.5 1169 25.5 200;
   margin-right: 76px;
 }
 
 .header-navigation {
-  display: inline-flex;
-  align-items: flex-start;
+  display: flex;
+  align-items: center;
   gap: 40px;
   flex-wrap: nowrap;
 }
@@ -139,7 +149,7 @@ ul {
 }
 
 .header-link {
-  display: flexbox;
+  display: flex;
   color: var(--navyblue, #2e2f42);
   font-size: 16px;
   font-weight: 500;
@@ -154,11 +164,12 @@ ul {
 }
 
 .header-mailto-list {
-  display: flex;
-  align-items: flex-start;
   gap: 40px;
-  flex-wrap: nowrap;
   padding: 24px 0 24px 0;
+  margin-right: 347px;
+}
+
+.header-mailto-item {
 }
 
 .header-mailto-link {
@@ -169,18 +180,12 @@ ul {
 }
 
 .hero {
-  width: 1440px;
-  height: 660px;
-  max-width: 1128px;
-  padding: 0 15px;
   background-color: #2e2f42;
-  align-content: center;
-  flex-shrink: 0;
-  margin: 0 auto;
 }
+
 .hero-title {
   display: flex;
-  width: 496px;
+  max-width: 496px;
   margin: 188px 472px 292px 472px;
   color: var(--white, #fff);
   text-align: center;
@@ -197,11 +202,14 @@ ul {
   line-height: 1.5em;
   letter-spacing: 0.04em;
   cursor: pointer;
-  display: flex;
+  display: block;
+  min-width: 169px;
+  height: 56px;
   padding: 16px 32px;
   align-items: center;
   gap: 10px;
   border-radius: 4px;
+  border: none;
 }
 .values {
   font-weight: 500;
@@ -209,13 +217,16 @@ ul {
   line-height: 1.2em;
   letter-spacing: 0.02em;
   align-content: center;
+  padding: 120px 0;
 }
 
 .values-list {
+  display: flex;
+  gap: 24px;
 }
 
 .values-item {
-  gap: 24px;
+  width: calc((100% - 72px) / 4);
 }
 
 .values-subtitle {
@@ -234,11 +245,12 @@ ul {
   color: var(--slate, #434455);
 }
 .product {
+  padding-bottom: 120px;
   background-color: var(--white, #fff);
 }
 .product-title {
   padding-top: 102px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   color: var(--navyblue, #2e2f42);
   text-align: center;
   font-size: 36px;
@@ -246,6 +258,16 @@ ul {
   letter-spacing: 0.02em;
   text-transform: capitalize;
 }
+
+.product-list {
+  display: flex;
+  gap: 24px;
+}
+
+.product-item {
+  width: calc((100% - 48px) / 3);
+}
+
 .product-img {
   padding-top: 72px;
   display: block;
@@ -254,11 +276,11 @@ ul {
   color: #e7e9fc;
 }
 .team {
+  padding: 120px 0;
   background-color: var(--cloud, #f4f4fd);
 }
 .team-title {
-  padding-top: 102px;
-  padding-bottom: 72px;
+  margin-bottom: 72px;
   color: var(--navyblue, #2e2f42);
   text-align: center;
   font-size: 36px;
@@ -268,12 +290,20 @@ ul {
 }
 
 .team-list {
-  width: calc((100% - 72px) / 4);
+  display: flex;
+  gap: 24px;
 }
 
 .team-item {
+  width: calc((100% - 72px) / 4);
   background-color: var(--white, #fff);
+  border-radius: 0px 0px 4px 4px;
 }
+
+.team-item-name {
+  padding: 32px 0;
+}
+
 .team-img {
   display: block;
   max-width: 100%;
@@ -288,6 +318,7 @@ ul {
   font-weight: 500;
   line-height: 1.2em;
   letter-spacing: 0.02em;
+  text-align: center;
 }
 .team-text {
   background-color: var(--white, #fff);
@@ -296,19 +327,21 @@ ul {
   line-height: 1.5em;
   letter-spacing: 0.02em;
   padding-bottom: 32px;
+  text-align: center;
 }
 .footer {
   width: 1440px;
   height: 312px;
   max-width: 1128px;
-  padding: 0 15px;
+  padding: 100px 0;
   align-content: center;
   flex-shrink: 0;
   margin: 0 auto;
   background-color: var(--navyblue, #2e2f42);
 }
 .footer-logo {
-  padding-top: 101.5px;
+  display: inline-block;
+  margin-bottom: 16px;
   color: var(--iris, #4d5ae5);
   font-family: "Raleway", sans-serif;
   font-size: 18px;
@@ -330,8 +363,31 @@ ul {
 }
 
 .portfolio {
+  padding-top: 96px;
+  padding-bottom: 120px;
   background-color: var(--white, #fff);
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.portfolio-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  margin-bottom: 72px;
+}
+
 .portfolio-btn {
   background-color: var(--cloud, #f4f4fd);
   color: #4d5ae5;
@@ -342,12 +398,35 @@ ul {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+}
+
+.portfolio-sec-list {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 48px;
+}
+
+.portfolio-sec-item {
+  width: calc((100% - 48px) / 3);
+}
+.portfolio-sec-link {
 }
 
 .portlolio-sec-img {
   display: block;
   max-width: 100%;
   height: auto;
+}
+
+.portfolio-sec-object {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc;
+  border-top: none;
+  margin-bottom: 8px;
 }
 
 .portfolio-sec-subtitle {
