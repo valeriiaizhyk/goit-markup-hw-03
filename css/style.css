@@ -91,13 +91,20 @@ p {
 }
 
 ul {
+  display: flex;
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .container {
-  max-width: 1128px;
+  width: 1158px;
   padding: 0 15px;
   margin: 0 auto;
   border: 1px solid #000;
@@ -137,7 +144,6 @@ ul {
   display: flex;
   align-items: center;
   gap: 40px;
-  flex-wrap: nowrap;
 }
 
 .header-list {
@@ -164,9 +170,9 @@ ul {
 }
 
 .header-mailto-list {
+  display: flex;
   gap: 40px;
-  padding: 24px 0 24px 0;
-  margin-right: 347px;
+  padding: 24px 0;
 }
 
 .header-mailto-item {
@@ -185,8 +191,9 @@ ul {
 
 .hero-title {
   display: flex;
-  max-width: 496px;
-  margin: 188px 472px 292px 472px;
+  width: 496px;
+  padding: 188px 0;
+  margin: 0 auto 48px auto;
   color: var(--white, #fff);
   text-align: center;
   font-size: 56px;
@@ -210,6 +217,7 @@ ul {
   gap: 10px;
   border-radius: 4px;
   border: none;
+  margin: 0 auto;
 }
 .values {
   font-weight: 500;
@@ -327,6 +335,7 @@ ul {
   line-height: 1.5em;
   letter-spacing: 0.02em;
   padding-bottom: 32px;
+  margin-bottom: 8px;
   text-align: center;
 }
 .footer {
@@ -435,6 +444,7 @@ ul {
   font-weight: 500;
   line-height: 1.2;
   letter-spacing: 0.02em;
+  margin-bottom: 8px;
 }
 .portfolio-sec-text {
   color: var(--slate, #434455);
