@@ -215,18 +215,17 @@ img {
   margin: 0 auto;
 }
 .values {
+  font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
   line-height: 1.2em;
   letter-spacing: 0.02em;
-  align-content: center;
-  padding: 120px 0;
 }
 
 .values-list {
   display: flex;
   gap: 24px;
-}
+  padding: 120px 0;
 
 .values-item {
   width: calc((100% - 72px) / 4);
@@ -239,7 +238,6 @@ img {
   line-height: 1.2em;
   letter-spacing: 0.02em;
   margin-bottom: 8px;
-  margin-top: 102px;
 }
 .values-text {
   font-size: 16px;
@@ -279,7 +277,6 @@ img {
   color: #e7e9fc;
 }
 .team {
-  padding: 120px 0;
   background-color: var(--cloud, #f4f4fd);
 }
 .team-title {
@@ -301,10 +298,6 @@ img {
   width: calc((100% - 72px) / 4);
   background-color: var(--white, #fff);
   border-radius: 0px 0px 4px 4px;
-}
-
-.team-item-name {
-  padding: 32px 0;
 }
 
 .team-img {
@@ -442,8 +435,8 @@ img {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
-.portfolio-sec-text {
-  color: var(--slate, #434455);
+.portfolio-sec-text{
+    color: var(--slate, #434455);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
