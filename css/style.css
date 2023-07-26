@@ -215,6 +215,7 @@ img {
   margin: 0 auto;
 }
 .values {
+  padding: 120px 0;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -225,7 +226,19 @@ img {
 .values-list {
   display: flex;
   gap: 24px;
-  padding: 120px 0;
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .values-item {
   width: calc((100% - 72px) / 4);
@@ -250,8 +263,6 @@ img {
   background-color: var(--white, #fff);
 }
 .product-title {
-  padding-top: 102px;
-  margin-bottom: 72px;
   color: var(--navyblue, #2e2f42);
   text-align: center;
   font-size: 36px;
@@ -276,7 +287,9 @@ img {
   height: auto;
   color: #e7e9fc;
 }
+
 .team {
+  padding: 120px 0;
   background-color: var(--cloud, #f4f4fd);
 }
 .team-title {
@@ -306,8 +319,12 @@ img {
   height: auto;
   background-color: var(--white, #fff);
 }
+
+.team-item-name {
+  padding: 32px 0;
+}
+
 .team-subtitle {
-  padding-top: 32px;
   background-color: var(--white, #fff);
   color: var(--navyblue, #2e2f42);
   font-size: 20px;
@@ -323,14 +340,11 @@ img {
   font-size: 16px;
   line-height: 1.5em;
   letter-spacing: 0.02em;
-  padding-bottom: 32px;
   margin-bottom: 8px;
   text-align: center;
 }
 .footer {
-  width: 1440px;
   height: 312px;
-  max-width: 1128px;
   padding: 100px 0;
   align-content: center;
   flex-shrink: 0;
@@ -338,7 +352,7 @@ img {
   background-color: var(--navyblue, #2e2f42);
 }
 .footer-logo {
-  display: inline-block;
+  display: inline-flex;
   margin-bottom: 16px;
   color: var(--iris, #4d5ae5);
   font-family: "Raleway", sans-serif;
@@ -361,22 +375,8 @@ img {
 }
 
 .portfolio {
-  padding-top: 96px;
-  padding-bottom: 120px;
+  padding: 96px 0 120px 0;
   background-color: var(--white, #fff);
-}
-
-.visually-hidden {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  white-space: nowrap;
-  clip-path: inset(100%);
-  clip: rect(0 0 0 0);
-  overflow: hidden;
 }
 
 .portfolio-list {
@@ -396,7 +396,7 @@ img {
   line-height: 1.5;
   letter-spacing: 0.04em;
   cursor: pointer;
-  padding: 12px 24px;
+  padding: 12px 24px 12px;
   border: 1px solid #e7e9fc;
   border-radius: 4px;
 }
@@ -435,8 +435,8 @@ img {
   letter-spacing: 0.02em;
   margin-bottom: 8px;
 }
-.portfolio-sec-text{
-    color: var(--slate, #434455);
+.portfolio-sec-text {
+  color: var(--slate, #434455);
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
