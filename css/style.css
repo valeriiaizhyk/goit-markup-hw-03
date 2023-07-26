@@ -269,6 +269,7 @@ img {
   line-height: 1.11em;
   letter-spacing: 0.02em;
   text-transform: capitalize;
+  margin-bottom: 72px;
 }
 
 .product-list {
@@ -281,7 +282,6 @@ img {
 }
 
 .product-img {
-  padding-top: 72px;
   display: block;
   max-width: 100%;
   height: auto;
@@ -352,7 +352,7 @@ img {
   background-color: var(--navyblue, #2e2f42);
 }
 .footer-logo {
-  display: inline-flex;
+  display: inline-block;
   margin-bottom: 16px;
   color: var(--iris, #4d5ae5);
   font-family: "Raleway", sans-serif;
