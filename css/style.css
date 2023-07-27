@@ -254,6 +254,7 @@ img {
 }
 .values-text {
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.5em;
   letter-spacing: 0.02em;
   color: var(--slate, #434455);
@@ -371,7 +372,6 @@ img {
   line-height: 1.5em;
   letter-spacing: 0.02em;
   max-width: 264px;
-  margin-top: 17.5px;
 }
 
 .portfolio {
@@ -424,7 +424,6 @@ img {
   padding: 32px 16px;
   border: 1px solid #e7e9fc;
   border-top: none;
-  margin-bottom: 8px;
 }
 
 .portfolio-sec-subtitle {
